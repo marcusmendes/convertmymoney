@@ -2,8 +2,23 @@
     "version": 2,
     "builds": [
         {
-            "src": "index.js",
-            "use": "@now/node" 
+            "src": "./index.js",
+            "use": "@now/node-server" 
+        }
+    ],
+    "routes": [
+        {
+            "src": "/cotacao",
+            "dest": "/"
+        },
+        {
+            "src": "/images/.*",
+            "headers": { "cache-control": "s-maxage=604800" },
+            "dest": "/"
+        },
+        {
+            "src": "/css/.*",
+            "dest": "/"
         }
     ]
 }
