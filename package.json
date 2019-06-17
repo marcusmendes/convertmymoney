@@ -1,13 +1,13 @@
 {
   "name": "convertmymoney",
   "version": "1.0.0",
-  "description": "",
+  "description": "Convert My Money",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Marcus Maciel <mendesxx.ti@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
@@ -15,5 +15,6 @@
   },
   "devDependencies": {
     "jest": "^24.8.0"
-  }
+  },
+  "repository": "git@github.com:marcusmendes/convertmymoney.git"
 }
